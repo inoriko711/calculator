@@ -10,19 +10,13 @@ const Title = (props) => {
         <div className="titleSection">
 
             <h2
-                style={props.titleStyle}
-                id="versionStatement"
+                onClick={props.onClick}
+                id="upgradeButton"
+                className="title-button"
             >
                 {props.children}
             </h2>
 
-            <p
-                onClick={props.onClick}
-                id="upgradeButton"
-                className="upgrade-button"
-            >
-                Upgrade
-            </p>
         </div>
     );
 }

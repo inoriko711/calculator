@@ -10,13 +10,13 @@ import Title from './components/Title/Title'
 
 class App extends Component {
 
-  state = { version: '1.0' }
+  state = { result: '0' }
 
   onclickHandler = () => {
 
-    let nextVersion = parseInt(this.state.version, 10) + 1
+    let nextVersion = parseInt(this.state.result, 10) + 1
 
-    this.setState({ version: nextVersion.toFixed(1) })// 小数点の桁数を指定
+    this.setState({ result: nextVersion.toFixed(1) })// 小数点の桁数を指定
   }
 
   render() {
@@ -29,9 +29,7 @@ class App extends Component {
             titleStyle={{ color: 'orange' }}
             onClick={this.onclickHandler}
           >
-            Hello World
-            <span id="versionCounter" style={{ borderBottom: '1px solid orange' }}>3.0</span>
-            {this.state.version}
+            超絶怒涛の電卓
           </Title>
         </header>
         <a

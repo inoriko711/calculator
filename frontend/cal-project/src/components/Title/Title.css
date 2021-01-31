@@ -1,4 +1,4 @@
-.upgrade-button{
+.title-button{
     padding: 5px 20px;
     border-radius: 5px;
     display: inline-block;
@@ -6,7 +6,7 @@
     cursor: pointer;
 }
 
-.upgrade-button:hover{
+.title-button:hover{
     /* 要素の不透明度 */
     opacity: .8; 
 }
