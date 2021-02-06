@@ -24,14 +24,38 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-
-          <Title
-            titleStyle={{ color: 'orange' }}
-            onClick={this.onclickHandler}
-          >
-            超絶怒涛の電卓
-          </Title>
         </header>
+
+        <Title
+          titleStyle={{ color: 'orange' }}
+          onClick={this.onclickHandler}
+        >
+          超絶怒涛の電卓
+          </Title>
+        <div>
+          <input type="button" value="7" onclick="edit(this)" />
+          <input type="button" value="8" onclick="edit(this)" />
+          <input type="button" value="9" onclick="edit(this)" />
+          <input type="button" value="/" onclick="edit(this)" />
+        </div>
+        <div>
+          <input type="button" value="4" onclick="edit(this)" />
+          <input type="button" value="5" onclick="edit(this)" />
+          <input type="button" value="6" onclick="edit(this)" />
+          <input type="button" value="-" onclick="edit(this)" />
+        </div>
+        <div>
+          <input type="button" value="1" onclick="edit(this)" />
+          <input type="button" value="2" onclick="edit(this)" />
+          <input type="button" value="3" onclick="edit(this)" />
+          <input type="button" value="+" onclick="edit(this)" />
+        </div>
+        <div>
+          <input type="button" value="0" onclick="edit(this)" />
+          <input type="button" value="." onclick="edit(this)" />
+          <input type="button" value="*" onclick="edit(this)" />
+          <input type="button" value="=" onclick="calc()" />
+        </div>
         <a
           className="App-link"
           href="https://reactjs.org"
