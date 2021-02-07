@@ -30,7 +30,7 @@ class App extends Component {
           </Title>
         </header>
 
-        <Result>
+        <Result val="ここに結果を表示する">
 
         </Result>
         <div>

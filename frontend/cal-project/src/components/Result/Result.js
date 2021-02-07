@@ -6,7 +6,9 @@ const Result = (props) => {
         <div
             id="numButton"
         >
-            <p>ここに結果を表示する</p>
+            <p>
+                {props.val}
+            </p>
         </div>
 
     );
