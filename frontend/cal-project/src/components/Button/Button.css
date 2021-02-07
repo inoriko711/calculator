@@ -5,6 +5,12 @@
     font-family: 'Sacramento';
     font-size: 1.4em;
     display: inline-block;
+
+    /* 角丸 */
+    -moz-background-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
     background-color:white;
     cursor: pointer;
     margin-right: .2em;

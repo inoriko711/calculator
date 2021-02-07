@@ -15,7 +15,7 @@ class App extends Component {
 
   state = { result: '0' }
 
-  onclickHandler = () => {
+  onClickHandler = () => {
   }
 
   render() {
@@ -31,25 +31,25 @@ class App extends Component {
 
         <Result val="ここに結果を表示する" />
         <div>
-          <Button val="7" buttonStyle={{ border: `3px solid #f2f200` }}></Button>
-          <Button val="8" buttonStyle={{ border: `3px solid #ef7f00` }}></Button>
-          <Button val="9" buttonStyle={{ border: `3px solid #8300db` }}></Button>
+          <Button val="7" buttonStyle="#f2f200" onClick={this.onClickHandler}></Button>
+          <Button val="8" buttonStyle="#ef7f00"></Button>
+          <Button val="9" buttonStyle="#8300db"></Button>
           <Operator val="/"></Operator>
         </div>
         <div>
-          <Button val="4" buttonStyle={{ border: `3px solid #e78bef` }}></Button>
-          <Button val="5" buttonStyle={{ border: `3px solid #7abbdb` }}></Button>
-          <Button val="6" buttonStyle={{ border: `3px solid #573da5` }}></Button>
+          <Button val="4" buttonStyle="#e78bef"></Button>
+          <Button val="5" buttonStyle="#7abbdb"></Button>
+          <Button val="6" buttonStyle="#573da5"></Button>
           <Operator val="-"></Operator>
         </div>
         <div>
-          <Button val="1" buttonStyle={{ border: `3px solid #fbf2fc` }}></Button>
-          <Button val="2" buttonStyle={{ border: `3px solid #f92500` }}></Button>
-          <Button val="3" buttonStyle={{ border: `3px solid #00b545` }}></Button>
+          <Button val="1" buttonStyle="#fbf2fc"></Button>
+          <Button val="2" buttonStyle="#f92500"></Button>
+          <Button val="3" buttonStyle="#00b545"></Button>
           <Operator val="+"></Operator>
         </div>
         <div>
-          <Button val="0" buttonStyle={{ border: `3px solid #002c51` }}></Button>
+          <Button val="0" buttonStyle="#002c51"></Button>
           <Button val="."></Button>
           <Operator val="*"></Operator>
           <Operator val="="></Operator>

@@ -4,7 +4,7 @@ import './Button.css'
 const Button = (props) => {
     return (
         <button
-            style={props.buttonStyle}
+            style={{ border: `3px solid` + props.buttonStyle }}
             className="num-button"
         >
             {props.val}
