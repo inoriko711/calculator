@@ -26,13 +26,10 @@ class App extends Component {
           <Title
             titleStyle={{ color: 'orange' }}
             onClick={this.onclickHandler}
-          >
-          </Title>
+          />
         </header>
 
-        <Result val="ここに結果を表示する">
-
-        </Result>
+        <Result val="ここに結果を表示する" />
         <div>
           <Button val="7" buttonStyle={{ border: `3px solid #f2f200` }}></Button>
           <Button val="8" buttonStyle={{ border: `3px solid #ef7f00` }}></Button>
