@@ -9,6 +9,7 @@ const Title = (props) => {
     return (
         <div className="titleSection">
             <h2
+                style={props.titleStyle}
                 onClick={props.onClick}
                 id="upgradeButton"
                 className="title-button">
