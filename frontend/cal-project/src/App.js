@@ -34,25 +34,25 @@ class App extends Component {
 
         </Result>
         <div>
-          <Button val="7"></Button>
-          <Button val="8"></Button>
-          <Button val="9"></Button>
+          <Button val="7" buttonStyle={{ border: `4px solid #f2f200` }}></Button>
+          <Button val="8" buttonStyle={{ border: `4px solid #ef7f00` }}></Button>
+          <Button val="9" buttonStyle={{ border: `4px solid #8300db` }}></Button>
           <Operator val="/"></Operator>
         </div>
         <div>
-          <Button val="4"></Button>
-          <Button val="5"></Button>
-          <Button val="6"></Button>
+          <Button val="4" buttonStyle={{ border: `4px solid #e78bef` }}></Button>
+          <Button val="5" buttonStyle={{ border: `4px solid #7abbdb` }}></Button>
+          <Button val="6" buttonStyle={{ border: `4px solid #573da5` }}></Button>
           <Operator val="-"></Operator>
         </div>
         <div>
-          <Button val="1"></Button>
-          <Button val="2"></Button>
-          <Button val="3"></Button>
+          <Button val="1" buttonStyle={{ border: `4px solid #fbf2fc` }}></Button>
+          <Button val="2" buttonStyle={{ border: `4px solid #f92500` }}></Button>
+          <Button val="3" buttonStyle={{ border: `4px solid #00b545` }}></Button>
           <Operator val="+"></Operator>
         </div>
         <div>
-          <Button val="0"></Button>
+          <Button val="0" buttonStyle={{ border: `4px solid #002c51` }}></Button>
           <Button val="."></Button>
           <Operator val="*"></Operator>
           <Operator val="="></Operator>
