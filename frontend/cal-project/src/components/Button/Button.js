@@ -1,9 +1,14 @@
 import React from 'react';
+import './Button.css'
 
 
 const Button = (props) => {
     return (
-        <input type="button" value={props.val} onclick="edit(this)" />
+        <button
+            className="num-button"
+        >
+            {props.val}
+        </button>
     );
 }
 

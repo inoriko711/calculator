@@ -3,7 +3,9 @@ import React from 'react';
 
 const Result = (props) => {
     return (
-        <div>
+        <div
+            id="numButton"
+        >
             <p>ここに結果を表示する</p>
         </div>
 

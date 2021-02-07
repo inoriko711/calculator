@@ -16,10 +16,6 @@ class App extends Component {
   state = { result: '0' }
 
   onclickHandler = () => {
-
-    let nextVersion = parseInt(this.state.result, 10) + 1
-
-    this.setState({ result: nextVersion.toFixed(1) })// 小数点の桁数を指定
   }
 
   render() {
@@ -58,7 +54,7 @@ class App extends Component {
         <div>
           <Button val="0"></Button>
           <Button val="."></Button>
-          <Button val="*"></Button>
+          <Operator val="*"></Operator>
           <Operator val="="></Operator>
         </div>
         <a
