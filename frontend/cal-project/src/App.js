@@ -6,6 +6,9 @@ import logo from './logo.svg';
 import './App.css';
 
 import Title from './components/Title/Title'
+import Result from './components/Result/Result';
+import Button from './components/Button/Button';
+import Operator from './components/Operator/Operator';
 
 
 class App extends Component {
@@ -24,37 +27,39 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
+          <Title
+            titleStyle={{ color: 'orange' }}
+            onClick={this.onclickHandler}
+          >
+          </Title>
         </header>
 
-        <Title
-          titleStyle={{ color: 'orange' }}
-          onClick={this.onclickHandler}
-        >
-          超絶怒涛の電卓
-          </Title>
+        <Result>
+
+        </Result>
         <div>
-          <input type="button" value="7" onclick="edit(this)" />
-          <input type="button" value="8" onclick="edit(this)" />
-          <input type="button" value="9" onclick="edit(this)" />
-          <input type="button" value="/" onclick="edit(this)" />
+          <Button val="7"></Button>
+          <Button val="8"></Button>
+          <Button val="9"></Button>
+          <Operator val="/"></Operator>
         </div>
         <div>
-          <input type="button" value="4" onclick="edit(this)" />
-          <input type="button" value="5" onclick="edit(this)" />
-          <input type="button" value="6" onclick="edit(this)" />
-          <input type="button" value="-" onclick="edit(this)" />
+          <Button val="4"></Button>
+          <Button val="5"></Button>
+          <Button val="6"></Button>
+          <Operator val="-"></Operator>
         </div>
         <div>
-          <input type="button" value="1" onclick="edit(this)" />
-          <input type="button" value="2" onclick="edit(this)" />
-          <input type="button" value="3" onclick="edit(this)" />
-          <input type="button" value="+" onclick="edit(this)" />
+          <Button val="1"></Button>
+          <Button val="2"></Button>
+          <Button val="3"></Button>
+          <Operator val="+"></Operator>
         </div>
         <div>
-          <input type="button" value="0" onclick="edit(this)" />
-          <input type="button" value="." onclick="edit(this)" />
-          <input type="button" value="*" onclick="edit(this)" />
-          <input type="button" value="=" onclick="calc()" />
+          <Button val="0"></Button>
+          <Button val="."></Button>
+          <Button val="*"></Button>
+          <Operator val="="></Operator>
         </div>
         <a
           className="App-link"

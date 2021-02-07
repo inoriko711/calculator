@@ -8,13 +8,11 @@ import './Title.css'
 const Title = (props) => {
     return (
         <div className="titleSection">
-
             <h2
                 onClick={props.onClick}
                 id="upgradeButton"
-                className="title-button"
-            >
-                {props.children}
+                className="title-button">
+                超絶怒涛の電卓
             </h2>
 
         </div>
